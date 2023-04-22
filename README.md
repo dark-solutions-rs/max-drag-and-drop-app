@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Max Drag & Drop App
+
+Author: Darko Stevanovic [maketest@gmail.com](mailto:maketest@gmail.com)
+
+## Created with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Download all packages from npm repository to node_modules folder.
 
 ### `npm start`
 
