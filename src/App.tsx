@@ -44,15 +44,20 @@ const DraggableUserList: FC = () => {
   }, [setUserList]);
 
   return (
-    <DragContext note="Ovo je opcionalan wrapper">
-      <DragArea as={'ul'} items={userList} onSortList={onSortList}>
-        {userList.map((user, i) => (
-          <DragItem key={user.id} as={'li'} index={i} note="ovde moze da ide key, index, itd.">
-            <UserItem name={`${user.firstName} ${user.lastName}`} email={user.email} />
-          </DragItem>
-        ))}
-      </DragArea>
-    </DragContext>
+    <>
+      <div className="header">
+        <p>Drag & Drop</p>
+      </div>
+      <DragContext note="Ovo je opcionalan wrapper">
+        <DragArea as={'ul'} items={userList} onSortList={onSortList}>
+          {userList.map((user, i) => (
+            <DragItem key={user.id} as={'li'} index={i} note="ovde moze da ide key, index, itd.">
+              <UserItem name={`${user.firstName} ${user.lastName}`} email={user.email} />
+            </DragItem>
+          ))}
+        </DragArea>
+      </DragContext>
+    </>
   );
 };
 
